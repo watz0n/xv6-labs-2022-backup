@@ -1,6 +1,10 @@
 ### MIT 6.1810 Fall 2022 Lab-Files Backup
 
-* This is a backup repo for my solutions on learning concepts in 6.1810 course, completed lab as below list:
+* Course Website: [MIT 6.1810/6.S081 Fall 2022](https://pdos.csail.mit.edu/6.S081/2022/)
+
+* If you want to start from scratch, use the [original git-repo for labs](https://pdos.csail.mit.edu/6.S081/2022/labs/util.html).
+
+* This is a backup and read-only repo for my solutions on learning concepts in 6.1810 course, completed lab as below list:
     * util    (100/100, 20hrs)
     * syscall (40/40  , 5hrs )
     * pgtbl   (46/46  , 6hrs )
