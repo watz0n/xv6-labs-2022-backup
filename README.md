@@ -31,7 +31,7 @@
         1. Delete `fs.img` before `make qemu`.
     * mmap-mmaptests
         1. Only implement the necessary functionality is fine.
-        2. Think about how you have done the pgtbl lab.
+        2. Think about how you have done the copy-on-write(cow) lab.
         3. May need to clean valid page manually.
 
 ------
