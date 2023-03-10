@@ -1,0 +1,13 @@
+Q1. Which other xv6 system call(s) could be made faster using this shared page?
+A1. fixed value in process live period as getpid(), or large data exchange/return like fstat()
+Q2. Explain the output of vmprint in terms of Fig 3-4 from the text. What does page 0 contain? What is in page 2? 
+    When running in user mode, could the process read/write the memory mapped by page 1? 
+    What does the third to last page contain?
+A2. Page 0: Text, i.e. Program
+    Page 2: Guard Page for Stack
+    Yes, Page 1 is data/variable region
+    Page 3: Stack
+    Page 509: usyscall
+    Page 510: trapframe
+    Page 511: trampoline
+
