@@ -1,0 +1,22 @@
+Q1. Which registers contain arguments to functions? For example, which register holds 13 in main's call to printf?
+A1. a0-a7 from RISC-V Specification
+    `24:	4635                	li	a2,13`
+Q2. Where is the call to function f in the assembly code for main? Where is the call to g?
+A2. No where, it's simplified by compiler, `26:	45b1                	li	a1,12`
+Q3. At what address is the function printf located?
+A3. `000000000000064a <printf>:`
+Q4. What value is in the register ra just after the jalr to printf in main?
+A4. 38
+```
+    34:	61a080e7          	jalr	1562(ra) # 64a <printf>
+    exit(0);
+    38:	4501                	li	a0,0
+```
+Q5. What is the output?
+```
+    unsigned int i = 0x00646c72;
+	printf("H%x Wo%s", 57616, &i);
+```
+A5. HE110 World
+Q6. In the following code, what is going to be printed after 'y='? Why does this happen?
+A6. x=3 y=8229, based on the unspecific value from register a2
